@@ -1,0 +1,23 @@
+package prak103_2110817320006_kamania.d.m;
+
+import java.util.Scanner;
+
+public class PRAK103_2110817320006_KamaniaDM {
+
+public static void main(String[] args) {
+        Scanner keyboard = new Scanner (System.in);
+        int input = keyboard.nextInt();
+        int i = 1;
+        do {
+            if (input % 7 == 0){
+                continue;
+            }
+            if (i == 5) System.out.print(input);
+            else System.out.print(input+",");
+            i++;
+            input--;
+        } while (i<=5);
+      
+    } 
+}
+    
